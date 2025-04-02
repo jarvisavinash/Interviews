@@ -1,0 +1,17 @@
+
+Payment payment = new Payment();      // new keyword is used to create the object.
+
+Object: A object is an instance of a class.
+
+Life Cycle: 
+1. Creation: using new keyword
+2. Usage: to call fields, properties and methods
+3. Destruction:  automatically destroys by Garbage Collectio (GC) if not in use.
+
+Note:
+1. When a class is defined no memory is allocated until the object of that class is not created.
+2. Object of a class has a access to the data members(fields, properties) and function members(methods) defined by the class.
+3. State is deined by the data members of a class.
+4. Behavior is defined by the function members of a class.
+5. Can access objects fields, properties and methods by using .(dot) operator.
+6. Each object can have different states even if they come from same class.
