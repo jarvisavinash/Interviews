@@ -1,0 +1,28 @@
+
+public class Payment 
+{
+  private int paymentId;              // Private field, Not accessible outside of the class.
+
+  public int PaymentId                // Property, Used to access fields from outside of the class.
+  {
+    get { return paymentId; }
+    set { paymentId = value; }
+  }
+
+  public Payment(int paymentId)       // Constructor, Used to initalize the object fields.
+  {
+    PaymentId = paymentId;
+  }
+
+  public void ShowPaymentId()         // Method, Define the behavior of the object.
+  {
+    Console.WriteLine($"PaymentId: {PaymentId}");
+  }
+}
+
+
+1. Class: A class is a template for creating an objects. It defines the Attributes(Fields, Properties) and Behavior(Methods) that object will have. 
+2. Field: A field is a veriable declared inside the class that holds data related to an object.
+3. Property: A property is a member of a class that provides a controlled way to access and modify private fields.
+4. Constructor: A constructor is a special method in a class that gets call automatically when the object of class is created.
+5. Method: A method is a block of code inside a class that performs a specific action.
