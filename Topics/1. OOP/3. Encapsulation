@@ -1,0 +1,56 @@
+
+class Student
+{
+
+  // Private members
+
+  private int id
+  priavte string name;
+
+  // Constructor
+
+  public Student(int id, string name)
+  {
+    this.id = id;
+    this.name = name;
+  }
+
+  // Public properties to access private members
+
+  public int id
+  {
+    get { return id}
+    set { id = value}
+  }
+
+  public string name
+  {
+    get { return id}
+    set { name = value}
+  }
+}
+
+Encapsulation: It refers to binding of data (fields) and code (methos/properties) toegther into a single unit typically a class.
+- It restricts direct access to some of the objects components.
+- We achived Encapsulation by using 'Access Modifers' which are 
+1. private: Accessible within class.
+2. public: Accessible within Everywhere.
+3. protectd: Accessible within class and derived.
+4. internal: Accessible within same assembly.
+5. protected internal: Accessible within same assembly and derived.
+6. private protected: Accessible within same class and derived assembly.
+
+Advantages of Encapsulation:
+1. Data Protection/Hiding
+  - It prevents direct access to class data (fields).
+2. Controlled Access:
+  - It exposed only what's needed using public properties or methods.
+  - You can add Validation or Business Rules in setters.
+3. Easier to Maintain
+  - If the internal logic changes, the outside world doesn't need to worry.
+  - Implementation is hidden behind a public interface.
+4. Imporves Reusability & Modularity
+  - Each class becomes a self contained module.
+  - You can reuse classes across different parts of your app.
+5. Easier to Test & Debug
+  - Since logic is encapsulated you can test individual components in isolation.
